@@ -1,0 +1,42 @@
+@mixin for-phone-only {
+	@media (max-width: 700px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+	@media (max-width: 900px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+	@media (max-width: 1200px) { @content; }
+}
+@mixin for-desktop-up {
+	@media (max-width: 1400px) { @content; }
+}
+@mixin divider {
+	width: 56px;
+	height: 2px;
+	background-color: #000;
+	margin: 30px auto;
+}
+@mixin link_style {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 18px;
+	color: #458FF6;
+	border: 2px solid #458FF6;
+	border-radius: 55px;
+	padding: 16px 40px;
+	width: 200px;
+}
+@mixin link_style_hover {
+	background: #458FF6;
+	border: 2px solid;
+	border-color: #458FF6;
+	box-shadow: 
+		0 0 35px #458FF6,
+		0 0 35px #458FF6;
+	color: #fff;
+}
+@mixin text18 {
+	font-size: 18px;
+	line-height: 30px;
+	color: #7D7987;
+}
